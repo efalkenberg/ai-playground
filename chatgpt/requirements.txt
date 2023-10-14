@@ -1,0 +1,6 @@
+openai
+urllib3==1.26.15
+bs4
+ipython
+
+

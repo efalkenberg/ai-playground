@@ -1,8 +1,12 @@
 import unittest
+import 
 
 class TestFunWithPrompts(unittest.TestCase):
+    HACKERNEWS_HTML_FILE = "hackernews_html_test.txt"
+    def test_result(self):
+        hackernews_html = open(HACKERNEWS_HTML_FILE, 'r').read()
+        result = prompt_translate_hackernews(hackernews_html)
 
-    def test_upper(self):
         self.assertEqual('foo'.upper(), 'FOO')
 
     def test_isupper(self):

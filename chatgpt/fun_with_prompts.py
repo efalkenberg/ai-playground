@@ -70,6 +70,7 @@ def prompt_translate_hackernews(hackernews_html=""):
 	response = get_completion(prompt)
 	display(HTML(response)) # in Jupyter this actually renders
 	print(response)
+	return response
 
 
 def is_api_token_valid():
